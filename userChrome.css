@@ -97,7 +97,10 @@ color: var(--foreground) !important;}
 #bookmarksPanel,
 #history-panel,
 #sidebar-header,
-#template-container {background-color: var(--background_bg)!important;}
+#template-container {
+  background-color: none !important;
+  background-image: linear-gradient(to top, rgba(21, 20, 26, 1) 10%,rgba(21, 20, 26, 0.4)) !important;
+}
 
 
 /*RIGHT CLICK MENU and ALT MENU*/
