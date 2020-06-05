@@ -1,0 +1,162 @@
+@import url("colors.css");
+@import url("layout/tabs.css");
+@import url("layout/all_on_one.css");
+
+:root{
+  --selected-icon-background: var(--background_bg);
+  --selected-tab-foreground: var(--background_bg);
+}
+
+/* Color the oneliner's background */
+#nav-bar,
+.toolbar-items,
+#tabbrowser-tabs {
+  -moz-appearance: none !important;
+  background: transparent !important;
+}
+/* Reorder the buttons before the tabs */
+#urlbar-container,
+#forward-button,
+#back-button,
+#nav-bar-overflow-button,
+#PanelUI-button {
+  -moz-box-ordinal-group: 0 !important;
+}
+#bookmarks-menu-button {
+  -moz-box-ordinal-group: 1 !important;
+}
+
+/* Make the urlbar rectangle-like */
+#urlbar {
+  padding: 2px !important;
+  border-radius: 0px !important;
+}
+
+
+menubar, toolbar, nav-bar, #TabsToolbar, #Personal > *{
+  background-color: none !important;
+}
+
+#PersonalToolbar {
+  visibility: collapse !important;
+}
+
+#navigator-toolbox:hover > #PersonalToolbar {
+  visibility: visible !important;
+}
+#main-window {
+  min-width: 800px !important;
+}
+#page-wrap {
+  width: 80%;
+  margin: auto;
+}
+panelview,
+.panel-arrowcontent
+{
+-moz-appearance: none !important;  
+background-color: none !important;
+background-image: linear-gradient(to top, rgba(21, 20, 26, 1) 10%,rgba(21, 20, 26, 0.4)) !important;
+color: var(--foreground) !important;}
+.vbox {
+  -moz-appearance: none !important;
+  -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.panel-arrow {
+  fill: var(--background_bg) !important;
+}
+
+/*PANEL UI BUTTON/MENU AKA HAMBURGER BUTTON*/
+/*Remove gray line beside button*/
+#PanelUI-button {
+  border-left: none !important;
+}
+
+/*Remove from Hamburger Menu*/
+#appMenu-addons-button, 
+#appMenu-fxa-status,
+#appMenu-options-button, #appMenu-whatsnew-button,
+#appMenu-open-file-button, #appMenu-more-button,
+#appMenu-save-file-button, #appMenu-print-button,
+#appMenu-find-button, #appMenu-customize-button {
+  display: none !important;
+}
+/*MORE AVAILABLE OPTIONS TO REMOVE*
+#appMenu-new-window-button,
+#appMenu-private-window-button
+#appMenu-preferences-button
+  
+/****THIS IS FOR HAMBURGER SUB MENU HIGHLIGHTING****/
+.subviewbutton:hover {
+  background-color: var(--accent-1) !important;
+}
+  
+/***SIDEBAR****/
+#bookmarksPanel,
+#history-panel,
+#sidebar-header,
+#template-container {background-color: var(--background_bg)!important;}
+
+
+/*RIGHT CLICK MENU and ALT MENU*/
+menupopup
+{
+  -moz-appearance: none!important;
+  background-color:none !important;
+  background-image: linear-gradient(to top, rgba(21, 20, 26, 1) 10%,rgba(21, 20, 26, 0.4)) !important;
+  color: var(--nords-2) !important;
+  position: relative !important;
+  border-radius: 10px !important; /*gives rounded appearance*/
+  border: 1px solid #15141a !important;
+  backdrop-filter: blur(5px) !important;
+}
+menupopup-inner {
+  -moz-appearance: none !important;
+  bottom: 0;
+ /* filter: blur(15px) !important; */
+  height: 94%;
+  left: 3%;
+  position: absolute !important;
+  width: 94%;
+  z-index: -1;
+}
+
+/*CONTEXT MENU*/
+#context-navigation {
+  background-color: none !important; 
+  background-image: linear-gradient(to left, /*rgba(171, 113, 255, 0.3), rgba(171, 113, 255, .7),rgba(21, 20, 26, 0.8),rgba(21, 20, 26, 0.2)*/rgba(171, 113, 255, 0.7),rgba(21, 20, 26, .6),rgba(21, 20, 26, 0.1)) !important;
+  border-top-left-radius: 10px !important; 
+  border-top-right-radius: 10px !important;
+}
+
+/****REMOVAL OF ENTRIES FROM CONTEXT MENU******/
+#context-sep-sendpagetodevice, 
+toolbarseparator, #context-sendpagetodevice,
+#context-sendlinktodevice, #contentAreaContextMenu > menuseparator:nth-child(92),
+#context_sendTabToDevice_separator, #context_sendTabToDevice+menuseparator {
+  display: none !important; }
+
+/*seperator removals*/
+menupopup > menuseparator {display: none !important}
+pageActionSeparator { display: none !important;}
+
+.titlebar-buttonbox {
+	margin-top: -6px; 
+}
+
+/*removal of scrollbar for tab bar Still able to scroll with mouse though*/
+#scrollbutton-down,
+#scrollbutton-up {
+display:none !important;
+}
+
+spacer:nth-child(4) {
+  background-image: none !important;
+  border-image: none !important;
+  border-left: 1px solid transparent !important;
+}
+
+
+

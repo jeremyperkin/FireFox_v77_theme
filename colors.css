@@ -1,0 +1,34 @@
+
+:root {
+  --accent:              var(--nordf-2);
+  --background_bg:        var(--nordp-0);
+  --background-bar:      var(--background_bg);
+  --blank-background:    var(--background_bg);
+  --foreground:          var(--nords-0);
+  --tab-icon-background: #592acb;
+  --newtab-background-color: var(--background_bg);
+
+/*NORD COLOR PALETTE*/
+
+  /*polar*/
+  --nordp-0:  #2E3440;
+  --nordp-1:  #3B4253;
+  --nordp-2:  #434c5E;
+  --nordp-3:  #4C566A;
+  /*snowstorm*/
+  --nords-0:  #d8DEE9;
+  --nords-1:  #E5e9f0;
+  --nords-2:  #ECEFF4;
+  /*frost*/
+  --nordf-0:  #8FBCBB;
+  --nordf-1:  #88C0D0;
+  --nordf-2:  #81A1C1;
+  --nordf-3:  #5E81AC;
+
+  /*aurora*/
+  --norda-0:  #BF616A;
+  --norda-1:  #D08770;
+  --norda-2:  #EBCB8B;
+  --norda-3:  #A3Be8C;
+  --norda-4:  #B48EAD;
+}

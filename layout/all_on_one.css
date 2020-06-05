@@ -1,0 +1,80 @@
+
+
+/* Modify these to change relative widths or default height */
+#navigator-toolbox{
+  border-bottom: none !important;
+  --uc-navigationbar-width: 860px;
+  --uc-toolbar-height: 40px;
+  background-image: linear-gradient(to left, rgba(171, 113, 255, 0), rgba(171, 113, 255, 1),rgba(21, 20, 26, 1),rgba(21, 20, 26, 0.4)) !important;
+}
+/* Override for other densities */
+:root[uidensity="compact"] > #navigator-toolbox{ --uc-toolbar-height: 32px; }
+:root[uidensity="touch"] > #navigator-toolbox{ --uc-toolbar-height: 40px; }
+
+/*:root[uidensity=compact] #urlbar-container.megabar{
+  --urlbar-container-height: var(--uc-toolbar-height) !important;
+  padding-block: 0 !important;
+}
+:root[uidensity=compact] #urlbar.megabar{
+  --urlbar-toolbar-height: var(--uc-toolbar-height) !important;
+}*/
+.urlbarView {
+  top: calc(100% - 5px) !important;
+  color: #f9f9fb !important;
+	background-color: none !important;
+  backdrop-filter: blur(5px) !important;
+  background-image: linear-gradient(to left, rgba(171, 113, 255, 0.7),rgba(21, 20, 26, .8),rgba(21, 20, 26, 0.4)) !important;
+  border-inline: none !important;
+}
+#urlbar-background {
+	display: none !important;
+}
+
+/* prevent urlbar overflow on narrow windows */
+/* Dependent on how many items are in navigation toolbar ADJUST AS NEEDED */
+@media screen and (max-width: 900px){
+  #urlbar-container{ min-width:500px !important }
+}
+/*remove border at the top of url bar drop down*/
+.urlbarView-body-inner {
+  border-top: none !important;
+}
+/* center the omnibar */
+toolbarspring {
+  max-width: 1000px !important;
+}
+/*get rid of the border line after protection icon*/
+#tracking-protection-icon-container {border-inline-end: none !important;}
+
+#TabsToolbar{ margin-left: var(--uc-navigationbar-width);/* margin-top: 6px !important; height: 36px !important*/ }
+#tabbrowser-tabs{ --tab-min-height: var(--uc-toolbar-height) !important; }
+/* This isn't useful when tabs start in the middle of the window */
+.titlebar-placeholder[type="pre-tabs"],
+.titlebar-spacer[type="pre-tabs"]{ display: none }
+
+.titlebar-spacer[type="pre-tabs"], .titlebar-spacer[type="post-tabs"] {
+  width: 130px !important
+}
+
+#navigator-toolbox > #nav-bar{
+	margin-right:calc(100vw - var(--uc-navigationbar-width));
+  margin-top: calc(0px - var(--uc-toolbar-height));
+}
+
+/* Override style set in window_control_placeholder_support.css  */
+#nav-bar::after{ display:none !important }
+
+/* Rules specific to window controls on right layout */
+@supports -moz-bool-pref("layout.css.osx-font-smoothing.enabled") {
+  .titlebar-buttonbox-container{ display: contents;}
+}
+
+/* Hide dropdown placeholder */
+/*#urlbar-container:not(:hover) .urlbar-history-dropmarker{ margin-inline-start: -28px; } */
+.titlebar-spacer[type="post-tabs"]{
+  display:none !important }
+
+/* no highlighting:hover color for results */
+.urlbarView-row:not([type="tip"]):hover > .urlbarView-row-inner {
+    background: transparent !important;
+}

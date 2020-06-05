@@ -1,0 +1,84 @@
+@import url("colors.css");
+
+
+#browser vbox#appcontent tabbrowser,
+#content,
+#tabbrowser-tabpanels,
+browser[type=content-primary],
+browser[type=content] > html {
+  background: var(--blank-background) !important;
+}
+
+@-moz-document url("about:newtab"), url("about:home") {
+    body {
+        overflow: hidden !important;
+    }
+    #root {
+        background-image: url("wallpaper.png") !important;
+        background-size: cover !important;
+    }
+    /* Hide the ugly logo & wordmark sorry Mozilla */
+    .logo-and-wordmark {
+        visibility: hidden !important;
+    }
+    /* Make the search bar rounded */
+    #newtab-search-text,
+    #searchSubmit {
+		border-radius: 50px !important;
+	}
+	.search-wrapper .search-inner-wrapper {
+		margin: 10px !important; }
+	.search-wrapper{ padding-top: 9px !important}
+}
+
+/*no scrollbar for the browser*/
+	*, 
+	*:before, 
+	*:after 
+	{
+		scrollbar-width: none !important;
+	}
+
+@-moz-document url-prefix(about:memory) {
+	html {
+		background: var(--background_bg)!important;
+		color: var(--foreground) !important;
+		}
+	.legend,
+	.opsRowLabel,
+	.section,
+	.treeline {
+		color: var(--foreground)!important
+		}
+}
+@-moz-document url-prefix(about:webrtc) {
+	html {
+		background-color: var(--background_bg)!important;
+		color: var(--foreground)!important
+		}
+	#content > div,
+	.peer-connection > h3 {
+		background-color: var(--background_bg)!important
+		}
+	.fold-trigger {
+		color: var(--foreground)!important
+		}
+	table {
+		color: var(--foreground)!important;
+		background-color: var(--background_bg)!important
+		}
+	.peer-connection table tr {
+		background-color: var(--background_bg)!important
+		}
+	.trickled {
+		background-color: var(--background_bg)!important;
+		color: var(--foreground)!important
+		}
+	.peer-connection table tr:first-of-type {
+		background-color: var(--background_bg)!important;
+		color: var(--foreground)!important
+		}
+	}
+
+
+
