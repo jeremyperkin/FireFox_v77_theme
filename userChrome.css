@@ -96,7 +96,6 @@ color: var(--foreground) !important;}
 /***SIDEBAR****/
 #bookmarksPanel,
 #history-panel,
-#sidebar-header,
 #template-container {
   background-color: none !important;
   background-image: linear-gradient(to top, rgba(21, 20, 26, 1) 10%,rgba(21, 20, 26, 0.4)) !important;
@@ -104,7 +103,8 @@ color: var(--foreground) !important;}
 
 #sidebar-header {
   border: none !important;
-  border-right: none !important;
+  background-color: none !important;
+  background-image: linear-gradient(to left, rgba(21, 20, 26, 1) 10%,rgba(21, 20, 26, 0.4)) !important;
 }
 
 /*remove the border on the right from sidebar*/
