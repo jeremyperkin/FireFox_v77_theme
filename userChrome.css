@@ -102,6 +102,16 @@ color: var(--foreground) !important;}
   background-image: linear-gradient(to top, rgba(21, 20, 26, 1) 10%,rgba(21, 20, 26, 0.4)) !important;
 }
 
+#sidebar-header {
+  border: none !important;
+  border-right: none !important;
+}
+
+/*remove the border on the right from sidebar*/
+#browser {
+  --sidebar-border-color: none !important;
+}
+
 
 /*RIGHT CLICK MENU and ALT MENU*/
 menupopup
