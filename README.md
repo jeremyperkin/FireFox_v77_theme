@@ -15,6 +15,9 @@ URL bar has no colour background - the gradient blends into it.
 
 Here are the Screens.
 
+![FFv77.new](https://i.imgur.com/CkynYf8.jpg "URL dropdown")
+
+
 ![FFv77](https://i.imgur.com/2NrgeNG.jpg "URL dropdown")
 
 
