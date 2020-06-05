@@ -1,5 +1,5 @@
 # FireFox_v77_theme
-Firefox v77 theme - gradient version. **TEST ON WINDOWS 10**
+Firefox v77 theme - gradient version. **TESTED ON WINDOWS 10**
 
 
 Here are the Screens.
