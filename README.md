@@ -1,5 +1,6 @@
 # FireFox_v77 UI Customization
-Firefox v77 theme - gradient version. **TESTED ON WINDOWS 10**
+
+**TESTED ON WINDOWS 10**
 
 # One Line setup
 
