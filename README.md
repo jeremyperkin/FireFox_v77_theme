@@ -1,9 +1,9 @@
 # FireFox_v77_theme
 Firefox v77 theme - gradient version. **TESTED ON WINDOWS 10**
 
-##One Line setup
+# One Line setup
 
-###Modifications
+## Modifications
 
 Tabs are just indicated by the favicon for the website.
 There is a circle radius behind the favicon that will display if tab is active.
